@@ -172,8 +172,10 @@ def main():
     exp_lr_scheduler = lr_scheduler.StepLR(optimizer_ft, step_size=7, gamma=0.1)
 
 
-    pickle.dump(model_ft, open('model.pth', 'wb'))
+    # pickle.dump(model_ft, open('model.pkl', 'wb'))
 
+
+    torch.save(model_ft, './best_model.pth')
 
 
 if __name__=='__main__':
