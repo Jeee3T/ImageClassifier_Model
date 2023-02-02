@@ -1,4 +1,5 @@
-# to be worked on
+# loading the saved model and passing image
+
 
 from __future__ import print_function, division
 
